@@ -29,9 +29,9 @@
         },
       ];
 
-      let result = products.forEach((price, i, arr) => {
-        let difPrice = arr[i].price * 0.15;
-        arr[i].price -= difPrice;
+      products.forEach(products => {
+        let difPrice = products.price * 0.15;
+        products.price -= difPrice;
       });
       console.log(products);
     </script>
